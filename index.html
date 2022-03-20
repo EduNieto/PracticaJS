@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fd891655de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Pokedex LaunchX</h1>
+            <div class="search">
+                <input type="text" name="txtSearch" id="searchPokemon" autocomplete="off" placeholder="Buscar pokémon...">
+                <button id="btnSearch" onclick="fetchPokemon()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="card-container">
+                <p id="pokemonName"></p>
+                <img src="img/shadow.png" alt="Pokémon image" id="pokemonImg" width="200">
+                <h2>Número</h2>
+                <p id="pokemonId"></p>
+                <h2>Tipo</h2>
+                <div id="types"></div>
+                <h2>Estadísticas</h2>
+                <div id="stats"></div>
+                <h2>Movimientos</h2>
+                <div id="moves"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
